@@ -1,0 +1,59 @@
+# Python caches and local build artefacts
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+.agents/
+.codex/
+.idea/
+.vscode/
+
+# Jupyter notebooks and checkpoints
+*.ipynb
+.ipynb_checkpoints/
+
+# Raw datasets and coursework source material
+Data/
+*.csv
+*.txt
+!requirements.txt
+*.pdf
+feedback.md
+*:Zone.Identifier
+
+# Trained models and large generated artefacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npy
+*.npz
+*.png
+*.jpg
+*.jpeg
+
+# Ignore generated results, but publish the Markdown reports and the image
+# assets required for them to render correctly on GitHub/the website.
+results/*
+!results/docs/
+results/docs/*
+!results/docs/*.md
+!results/docs/assets/
+results/docs/assets/*
+!results/docs/assets/*.png
+
+# Operating-system files
+.DS_Store
+Thumbs.db
